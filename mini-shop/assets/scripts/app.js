@@ -1,8 +1,7 @@
 // const products = [
 //     {
 //         title: 'A Pillow',
-//         imageUrl:
-//             'data:image/jpeg;base64,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',
+//         imageUrl: '',
 //         price: 19.99,
 //         description: 'A soft pillow!'
 //     },
@@ -15,46 +14,186 @@
 //     }
 // ];
 
-const productList = {
-    products: [
-        {
-            title: 'A Pillow',
-            imageUrl:
-                'data:image/jpeg;base64,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',
-            price: 19.99,
-            description: 'A soft pillow!'
-        },
-        {
-            title: 'A Carpet',
-            imageUrl:
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX8svBt7ZCRKY-4k7Ca5ML-hH4ufag4RaGZPyLl4ajOwNXVNdceeeFGpnCswUHhdmxAkw&usqp=CAU',
-            price: 89.99,
-            description: 'A carpet'
-        }
-    ],
+class Product {
+    // title = '';
+    // imageUrl;
+    // price;
+    // description;
+
+    constructor(title, imageUrl, price, description) {
+        this.title = title;
+        this.imageUrl = imageUrl;
+        this.price = price;
+        this.description = description;
+    }
+}
+
+class ShoppingCart {
+    item = [];
+
+    addProduct(product) {
+        this.item.push(product);
+        this.totalOutput.innerHTML = `<h2>Total: \$${1}</h2>`;
+    }
 
     render() {
-        const renderHook = document.getElementById('app');
+        const cartEl = document.createElement('section');
+        cartEl.innerHTML = `
+        <h2>Total: \$${0}</h2>
+        <button>Order Now!</button>
+        `;
+        cartEl.className = 'cart';
+        this.totalOutput = cartEl.querySelector('h2');
+        return cartEl;
+    }
+}
+
+class ProductItem {
+    constructor(product) {
+        this.product = product;
+    }
+
+    addToCart() {
+        App.addProductTocart(this.product);
+    }
+
+    render() {
+        const prodEl = document.createElement('li');
+        prodEl.className = 'product-item';
+        prodEl.innerHTML = `
+        <div>
+            <img src="${this.product.imageUrl}" alt="${this.product.title}">
+            <div class="product-item__content">
+                <h2>${this.product.title}</h2>
+                <h3>\$${this.product.price}</h3>
+                <p>${this.product.description}</p>
+                <button> Add to Cart</button>
+            </div>
+        </div>
+        `;
+        const addCartButton = prodEl.querySelector('button');
+        addCartButton.addEventListener('click', this.addToCart.bind(this));
+        return prodEl;
+    }
+}
+
+class ProductList {
+    products = [
+        new Product(
+            'A Pillow',
+            'https://atlas-content-cdn.pixelsquid.com/stock-images/throw-pillow-AERZO6D-600.jpg',
+            19.99,
+            'A soft pillow!'
+        ),
+        new Product(
+            'A Carpet',
+            'https://static.vecteezy.com/system/resources/thumbnails/009/378/433/small/a-3d-rendering-image-of-product-display-on-white-fur-png.png',
+            89.99,
+            'A carpet'
+        )
+    ];
+
+    constructor() { };
+
+    render() {
+        // const renderHook = document.getElementById('app');
         const prodList = document.createElement('ul');
         prodList.className = 'product-list';
         for (const prod of this.products) {
-            const prodEl = document.createElement('li');
-            prodEl.className = 'product-item';
-            prodEl.innerHTML = `
-            <div>
-                <img src="${prod.imageUrl}" alt="${prod.title}">
-                <div class="product-item__content">
-                    <h2>${prod.title}</h2>
-                    <h3>\$${prod.price}</h3>
-                    <p>${prod.description}</p>
-                    <button> Add to Cart</button>
-                </div>
-            </div>
-            `
+            // const prodEl = document.createElement('li');
+            // prodEl.className = 'product-item';
+            // prodEl.innerHTML = `
+            // <div>
+            //     <img src="${prod.imageUrl}" alt="${prod.title}">
+            //     <div class="product-item__content">
+            //         <h2>${prod.title}</h2>
+            //         <h3>\$${prod.price}</h3>
+            //         <p>${prod.description}</p>
+            //         <button> Add to Cart</button>
+            //     </div>
+            // </div>
+            // `;
+            const productItem = new ProductItem(prod);
+            const prodEl = productItem.render();
             prodList.append(prodEl);
         }
-        renderHook.append(prodList);
+        return prodList;
+        // renderHook.append(prodList);
     }
-};
+}
 
-productList.render();
+// const productList = {
+//     products: [
+//         new Product(
+//             'A Pillow',
+//             'https://atlas-content-cdn.pixelsquid.com/stock-images/throw-pillow-AERZO6D-600.jpg',
+//             19.99,
+//             'A soft pillow!'
+//         ),
+//         new Product(
+//             'A Carpet',
+//             'https://static.vecteezy.com/system/resources/thumbnails/009/378/433/small/a-3d-rendering-image-of-product-display-on-white-fur-png.png',
+//             89.99,
+//             'A carpet'
+//         )
+//     ],
+
+//     render() {
+//         const renderHook = document.getElementById('app');
+//         const prodList = document.createElement('ul');
+//         prodList.className = 'product-list';
+//         for (const prod of this.products) {
+//             const prodEl = document.createElement('li');
+//             prodEl.className = 'product-item';
+//             prodEl.innerHTML = `
+//             <div>
+//                 <img src="${prod.imageUrl}" alt="${prod.title}">
+//                 <div class="product-item__content">
+//                     <h2>${prod.title}</h2>
+//                     <h3>\$${prod.price}</h3>
+//                     <p>${prod.description}</p>
+//                     <button> Add to Cart</button>
+//                 </div>
+//             </div>
+//             `
+//             prodList.append(prodEl);
+//         }
+//         renderHook.append(prodList);
+//     }
+// };
+
+// productList.render();
+
+class Shop {
+
+
+    render() {
+        const renderHook = document.getElementById('app');
+
+        this.cart = new ShoppingCart();
+        const cartEl = this.cart.render();
+        const productList = new ProductList();
+        const prodListEl = productList.render();
+        renderHook.append(cartEl);
+        renderHook.append(prodListEl);
+    }
+}
+
+class App {
+    static cart;
+
+    static init() {
+        const shop = new Shop();
+        shop.render();
+        this.cart = shop.cart;
+    }
+
+    static addProductTocart(product) {
+        this.cart.addProduct(product);
+    }
+}
+
+App.init();
+
+
+
