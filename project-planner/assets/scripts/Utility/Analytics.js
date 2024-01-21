@@ -1,4 +1,3 @@
-
 const intervalId = setInterval(
     () => {
         console.log('Sending analytics...');
