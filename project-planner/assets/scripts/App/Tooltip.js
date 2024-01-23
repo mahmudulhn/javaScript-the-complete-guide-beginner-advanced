@@ -1,6 +1,6 @@
+import { Component } from '/assets/scripts/App/Component.js';
 
-
-class Tooltip extends Component {
+export class Tooltip extends Component {
     constructor(closeNotifierFunction, text, hostElementId) {
         super(hostElementId);
         this.closeNotifier = closeNotifierFunction;

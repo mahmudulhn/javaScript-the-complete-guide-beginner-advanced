@@ -1,8 +1,4 @@
-
-
-
-
-
+import { ProjectList } from '/assets/scripts/App/ProjectList.js';
 
 class App {
     static init() {
