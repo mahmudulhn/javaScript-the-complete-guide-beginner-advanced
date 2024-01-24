@@ -1,5 +1,7 @@
 import { ProjectList } from '/assets/scripts/App/ProjectList.js';
 
+globalThis.window.DEFAULT_VALUE = 'nihad';
+
 class App {
     static init() {
         const activeProjectsList = new ProjectList('active');

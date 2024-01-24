@@ -1,5 +1,9 @@
-import { ProjectItem } from '/assets/scripts/App/ProjectItem.js';
-import { DOMHelper } from '/assets/scripts/Utility/DOMHelper.js';
+import { ProjectItem as prjItem } from '/assets/scripts/App/ProjectItem.js';
+import * as DOMH from '/assets/scripts/Utility/DOMHelper.js';
+
+const ProjectItem = 'abc';
+
+// console.log(globalThis);
 
 export class ProjectList {
     projects = [];
@@ -7,8 +11,8 @@ export class ProjectList {
     constructor(type) {
         this.type = type;
         const prjItems = document.querySelectorAll(`#${type}-projects li`);
-        for (const prjItem of prjItems) {
-            this.projects.push(new ProjectItem(prjItem.id,
+        for (const prjI of prjItems) {
+            this.projects.push(new prjItem(prjI.id,
                 this.switchProject.bind(this),
                 this.type));
         }
@@ -17,6 +21,7 @@ export class ProjectList {
     }
 
     connectDroppable() {
+        console.log(globalThis);
         const list = document.querySelector(`#${this.type}-projects ul`);
         list.addEventListener('dragenter', event => {
             if (event.dataTransfer.types[0] === 'text/plain') {
@@ -58,7 +63,7 @@ export class ProjectList {
 
     addProject(project) {
         this.projects.push(project);
-        DOMHelper.moveElement(project.id,
+        DOMH.moveElement(project.id,
             `#${this.type}-projects ul`);
         project.update(this.switchProject.bind(this),
             this.type);
