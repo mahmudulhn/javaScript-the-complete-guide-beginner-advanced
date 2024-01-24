@@ -1,4 +1,4 @@
-import Cmp, { doSomething } from '/assets/scripts/App/Component.js';
+import Cmp, { doSomething } from '/src/App/Component.js';
 
 console.log('Tooltip');
 
@@ -9,12 +9,13 @@ export class Tooltip extends Cmp {
         this.closeNotifier = closeNotifierFunction;
         this.text = text;
         // this.hostElementId = hostElementId;
+        this.closeTooltip = () => {
+            this.detach();
+            this.closeNotifier();
+        };
         this.create();
     }
-    closeTooltip = () => {
-        this.detach();
-        this.closeNotifier();
-    }
+
 
     create() {
         const tooltipElement = document.createElement('div');

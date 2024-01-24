@@ -1,4 +1,4 @@
-export function doSomething() { };
+export function doSomething() { }
 
 export default class {
     constructor(hostElementId, insertBefore = false) {
@@ -13,7 +13,7 @@ export default class {
         if (this.element) {
             this.element.remove();
         }
-    }
+    };
 
     attach() {
         this.hostElement.insertAdjacentElement(

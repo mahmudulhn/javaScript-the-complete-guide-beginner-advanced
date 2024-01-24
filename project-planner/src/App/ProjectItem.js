@@ -1,13 +1,14 @@
-import { DOMHelper } from '/assets/scripts/Utility/DOMHelper.js';
+import { DOMHelper } from '/src/Utility/DOMHelper.js';
 // import { Tooltip } from '/assets/scripts/App/Tooltip.js';
 
-console.log('Project Item created');
+// console.log('Project Item created');
 
 export class ProjectItem {
-    hasActiveToolTip = false;
+    // hasActiveToolTip = false;
 
     constructor(id, updateProjectListsFunction, type) {
         this.id = id;
+        this.hasActiveToolTip = false;
         this.updateProjectListsHandler = updateProjectListsFunction;
         this.connectMoreInfoButton();
         this.connectSwitchButton(type);
@@ -20,7 +21,7 @@ export class ProjectItem {
         }
         const projectElement = document.getElementById(this.id);
         const tooltipText = projectElement.dataset.extraInfo;
-        import('/assets/scripts/App/Tooltip.js').then(module => {
+        import('/src/App/Tooltip.js').then(module => {
             const tooltip = new module.Tooltip(
                 () => {
                     this.hasActiveToolTip = false;

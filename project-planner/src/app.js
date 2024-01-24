@@ -1,6 +1,10 @@
-import { ProjectList } from '/assets/scripts/App/ProjectList.js';
+import * as _ from 'lodash/array';
+
+import { ProjectList } from '/src/App/ProjectList.js';
 
 globalThis.window.DEFAULT_VALUE = 'nihad';
+
+console.log(_.difference([0, 1], [1, 2]));
 
 class App {
     static init() {
@@ -16,11 +20,11 @@ class App {
         // document.getElementById('stop-analytics-btn').addEventListener('click', () => {
         //     clearTimeout(timerId);
         // });
-    };
+    }
 
     static startAnalytics() {
         const analyticsScript = document.createElement('script');
-        analyticsScript.src = '/assets/scripts/Utility/Analytics.js';
+        analyticsScript.src = '/src/Utility/Analytics.js';
         analyticsScript.defer = true;
         document.head.append(analyticsScript);
     }

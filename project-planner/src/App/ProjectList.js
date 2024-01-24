@@ -1,15 +1,16 @@
-import { ProjectItem as prjItem } from '/assets/scripts/App/ProjectItem.js';
-import * as DOMH from '/assets/scripts/Utility/DOMHelper.js';
+import { ProjectItem as prjItem } from '/src/App/ProjectItem.js';
+import * as DOMH from '/src/Utility/DOMHelper.js';
 
-const ProjectItem = 'abc';
+// const ProjectItem = 'abc';
 
 // console.log(globalThis);
 
 export class ProjectList {
-    projects = [];
+    // projects = [];
 
     constructor(type) {
         this.type = type;
+        this.projects = [];
         const prjItems = document.querySelectorAll(`#${type}-projects li`);
         for (const prjI of prjItems) {
             this.projects.push(new prjItem(prjI.id,
